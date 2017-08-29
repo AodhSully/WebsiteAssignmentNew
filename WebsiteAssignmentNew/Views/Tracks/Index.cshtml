@@ -1,0 +1,23 @@
+﻿@*@model IEnumerable<WebsiteAssignmentNew.Models.Track>*@
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Tracks</h2>
+
+@*@foreach (var Track in Model)
+{
+    <section>
+        <img alt="@Track.Title" src="~/Content/TempImages/@Track.TrackImage" width="100" height="100" />
+        <h4>
+            @Track.Title<br />
+            @Track.Artist<br />
+            Track Code: @Track.TrackCode
+        </h4>
+        <h4>Price Digital: &euro;@Track.PriceDownload</h4>
+        <h4>Price CD: &euro;@Track.PriceCD</h4>
+        <h4>Price Vinyl: &euro;@Track.PriceVinyl</h4>
+        <hr />
+    </section>
+}*@

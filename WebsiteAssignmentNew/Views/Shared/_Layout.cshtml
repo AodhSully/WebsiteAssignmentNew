@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title BadCat Records</title>
+    <link rel="stylesheet" href="~/Content/styles.css" type="text/css" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="headimg">
+                <!--<img id="logo" alt="badcattextlogo" src="~/Content/Images/croppedLogo.png" class="right" />-->
+                <img id="eyes" alt="eyesLogo" src="~/Content/Images/eyes2.png" class="right" />
+                <img id="logoText" alt="badcatlogotext" src="~/Content/Images/textLogo.png" />
+                <!--<h2><em>BadCat Records</em></h2>-->
+               
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    @Html.ActionLink("Home", "Index", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Tracks", "Index", "Tracks")
+                </li>
+                <li>
+                    @Html.ActionLink("Artist", "Index", "Artist")
+                </li>
+                <li>
+                    @Html.ActionLink("Shop", "Index", "Shop")
+                </li>
+                <li>
+                    @Html.ActionLink("About Us", "Index", "About")
+                </li>
+                <li>
+                    @Html.ActionLink("Contact Us", "Index", "Contact")
+                </li>
+                <li id="logIn">
+                    @*@{Html.RenderPartial("LoginRegister"); }*@
+                    @RenderPage("LoginRegister.cshtml")
+                    @RenderSection("Logged", false)
+                </li>
+
+            </ul>
+
+        </nav>
+        <main>
+            @RenderBody()
+        </main>
+        <footer>
+            <hr />
+            BadCat Records&copy; @DateTime.Now.Year
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+﻿#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Tw Cen MT';
+}
+
+
+#eyes {
+    height: 120px;
+    width: 500px;
+    resize: horizontal;
+    padding-left: 30px;
+}
+
+#logoText {
+    /**padding-left:30px;*/
+    height: 120px;
+    width: 600px;
+    padding-left: 25px;
+}
+
+#headimg {
+    display: inline-block;
+}
+
+header {
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: red;
+    /*color: yellow;*/
+}
+
+
+
+nav {
+    height: 25px;
+    background: linear-gradient(red, white);
+    padding-top: 0.5px;
+    padding-bottom: 40px;
+    color: black;
+    font-size: 25px;
+    padding-right: 50px;
+}
+
+
+    nav ul {
+        list-style-type: none;
+    }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+            nav ul li a:link {
+                text-decoration: none;
+            }
+
+            nav ul li a:visited {
+                color: black;
+            }
+
+    /*Styling for 2nd level navigation*/
+    nav li ul {
+        display: none;
+        position: absolute;
+        display: inline
+    }
+
+    nav li:hover ul {
+        display: block;
+    }
+
+    nav li:hover {
+        text-decoration: underline;
+    }
+
+main {
+    color: black;
+    /*border:1px solid black;*/
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 500px;
+    height: auto;
+}
+
+
+label:after {
+    content: "\A";
+    white-space: pre;
+}
+
+.error {
+    color: yellow;
+}
+
+/***********************************************REGISTER********************************************************************/
+
+.register {
+    float: right;
+    margin-right: 5px;
+}
+
+    .register:hover {
+        text-decoration: underline;
+    }
+
+    .register:link {
+        color: black;
+    }
+
+
+.right {
+    float: right;
+}
+
+
+
+/**********************************************FOOTER****************************************************************/
+footer {
+    text-align: center;
+}
