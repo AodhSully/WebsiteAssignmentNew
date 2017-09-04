@@ -1,6 +1,7 @@
 ﻿#wrapper {
     width: 80%;
     margin: 0 auto;
+    height: auto;
     padding: 0;
     font-family: 'Tw Cen MT';
 }
@@ -8,16 +9,19 @@
 
 #eyes {
     height: 120px;
-    width: 500px;
+    max-width: 500px;
     resize: horizontal;
     padding-left: 30px;
+    display: inline-block;
 }
 
 #logoText {
-    /**padding-left:30px;*/
+    max-width: 500px;
+    padding-left: 30px;
     height: 120px;
     width: 600px;
     padding-left: 25px;
+    display: inline-block;
 }
 
 #headimg {
@@ -25,8 +29,10 @@
 }
 
 header {
-    height: 100px;
-    padding-left: 10px;
+    height: auto;
+    min-height: 140px;
+    min-width:580px;
+    /*padding-left: 10px;*/
     padding-top: 15px;
     padding-bottom: 10px;
     background-color: red;
@@ -36,22 +42,27 @@ header {
 
 
 nav {
-    height: 25px;
+    min-height: 25px;
+    height: auto;
     background: linear-gradient(red, white);
     padding-top: 0.5px;
     padding-bottom: 40px;
     color: black;
     font-size: 25px;
-    padding-right: 50px;
+    padding-right: 100px;
+    padding-left: 50px;
+    min-width: 580px;
 }
 
 
     nav ul {
         list-style-type: none;
+        
     }
 
         nav ul li {
             display: inline;
+            
             margin-right: 10px;
         }
 

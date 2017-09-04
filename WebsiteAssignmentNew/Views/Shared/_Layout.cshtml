@@ -3,56 +3,77 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title BadCat Records</title>
-    <link rel="stylesheet" href="~/Content/styles.css" type="text/css" />
+    <title>BadCat Records @ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/styles.css" type="text/css" />    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <div id="wrapper">
+
+
+<body class="col-md-12">
+    <div id="wrapper" >
         <header>
-            <div id="headimg">
-                <!--<img id="logo" alt="badcattextlogo" src="~/Content/Images/croppedLogo.png" class="right" />-->
-                <img id="eyes" alt="eyesLogo" src="~/Content/Images/eyes2.png" class="right" />
-                <img id="logoText" alt="badcatlogotext" src="~/Content/Images/textLogo.png" />
-                <!--<h2><em>BadCat Records</em></h2>-->
-               
+            <div id="headimg" class="col-md-12">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!--<img id="logo" alt="badcattextlogo" src="~/Content/Images/croppedLogo.png" class="right" />-->
+
+                            <img id="logoText" alt="badcatlogotext" src="~/Content/Images/textLogo.png" class="rounded float-left" />
+                        </div>
+                        <div class="col-md-6">
+                            <img id="eyes" alt="eyesLogo" src="~/Content/Images/eyes2.png" class="rounded float-right" />
+                            <!--<h2><em>BadCat Records</em></h2>-->
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
+
+
+
+
         <nav>
-            <ul>
-                <li>
-                    @Html.ActionLink("Home", "Index", "Home")
-                </li>
-                <li>
-                    @Html.ActionLink("Tracks", "Index", "Tracks")
-                </li>
-                <li>
-                    @Html.ActionLink("Artist", "Index", "Artist")
-                </li>
-                <li>
-                    @Html.ActionLink("Shop", "Index", "Shop")
-                </li>
-                <li>
-                    @Html.ActionLink("About Us", "Index", "About")
-                </li>
-                <li>
-                    @Html.ActionLink("Contact Us", "Index", "Contact")
-                </li>
-                <li id="logIn">
-                    @*@{Html.RenderPartial("LoginRegister"); }*@
-                    @RenderPage("LoginRegister.cshtml")
-                    @RenderSection("Logged", false)
-                </li>
+            <ul class="col-md-12">
+                @*<div class="col-md-8">*@
 
-            </ul>
+                    <li>
+                        @Html.ActionLink("Home", "Index", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Tracks", "Index", "Tracks")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Artist", "Index", "Artist")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Shop", "Index", "Shop")
+                    </li>
+                    <li>
+                        @Html.ActionLink("About Us", "Index", "About")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Contact Us", "Index", "Contact")
+                    </li>
+                @*</div>
+                <div class="col-md-4">*@
+                    <li id="logIn">
+                        @*@{Html.RenderPartial("LoginRegister"); }*@
+                        @RenderPage("LoginRegister.cshtml")
+                        @RenderSection("Logged", false)
+                    </li>
+                @*</div>*@
+    </ul>
 
-        </nav>
-        <main>
-            @RenderBody()
-        </main>
-        <footer>
-            <hr />
-            BadCat Records&copy; @DateTime.Now.Year
-        </footer>
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <hr />
+        BadCat Records&copy; @DateTime.Now.Year
+    </footer>
     </div>
 </body>
 </html>

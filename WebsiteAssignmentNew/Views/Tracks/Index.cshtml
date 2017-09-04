@@ -6,31 +6,92 @@
 
 <h2>Tracks</h2>
 <div class="container-fluid">
+    
+
     <div class="row">
-        <div class="col-md-4 ">  @*col-md-offset-1*@
+       
+
+            <div class="col-md-4">
+                @*col-md-offset-1*@
+                @foreach (var Track in Model)
+            {
+                    @*<section id="trsckInfo">*@
+                    <img id="trackArt" alt="@Track.Title" class="img-responsive" src="~/Content/TempImages/@Track.TrackImage" width="350" height="350" />
+                        <P>
+                            @Track.Artist<br />
+                            @Track.Title<br />
+                            Track Code: @Track.TrackCode
+                        </P>
+                        <p>
+                            Price Digital: &nbsp; &euro;@Track.PriceDownload<br />
+                            Price CD: &nbsp;&nbsp; &euro;@Track.PriceCD<br />
+                            Price Vinyl: &nbsp; &euro;@Track.PriceVinyl
+                        </p>
+                        <p>
+                            <audio controls="controls">
+                                <source src="~/Content/tempAudio/@Track.TrackAudio" type="audio/mp3" />
+                            </audio>
+                        </p>
+
+                        @*<hr />*@
+                        @*</section>*@
+                }
+            </div>
+        <div class="col-md-4">
+            @*col-md-offset-1*@
             @foreach (var Track in Model)
             {
                 @*<section id="trsckInfo">*@
-                    <img id="trackArt" alt="@Track.Title" class="img-responsive" src="~/Content/TempImages/@Track.TrackImage" width="350" height="350" />
+                <img id="trackArt" alt="@Track.Title" class="img-responsive" src="~/Content/TempImages/@Track.TrackImage" width="350" height="350" />
                     <P>
                         @Track.Artist<br />
                         @Track.Title<br />
                         Track Code: @Track.TrackCode
                     </P>
-                    <p>
-                        Price Digital: &nbsp; &euro;@Track.PriceDownload<br />
-                        Price CD: &nbsp;&nbsp; &euro;@Track.PriceCD<br />
-                        Price Vinyl: &nbsp; &euro;@Track.PriceVinyl
-                    </p>
-                    <p>
-                        <audio controls="controls">
-                            <source src="~/Content/tempAudio/@Track.TrackAudio" type="audio/mp3" />
-                        </audio>
-                    </p>
+                        <p>
+                            Price Digital: &nbsp; &euro;@Track.PriceDownload<br />
+                            Price CD: &nbsp;&nbsp; &euro;@Track.PriceCD<br />
+                            Price Vinyl: &nbsp; &euro;@Track.PriceVinyl
+                        </p>
+                        <p>
+                            <audio controls="controls">
+                                <source src="~/Content/tempAudio/@Track.TrackAudio" type="audio/mp3" />
+                            </audio>
+                        </p>
 
-                    @*<hr />*@
-                @*</section>*@
+                        @*<hr />*@
+                        @*</section>*@
             }
         </div>
+
+        <div class="col-md-4">
+            @*col-md-offset-1*@
+            @foreach (var Track in Model)
+            {
+                @*<section id="trsckInfo">*@
+                <img id="trackArt" alt="@Track.Title" class="img-responsive" src="~/Content/TempImages/@Track.TrackImage" width="350" height="350" />
+                    <P>
+                        @Track.Artist<br />
+                        @Track.Title<br />
+                        Track Code: @Track.TrackCode
+                    </P>
+                        <p>
+                            Price Digital: &nbsp; &euro;@Track.PriceDownload<br />
+                            Price CD: &nbsp;&nbsp; &euro;@Track.PriceCD<br />
+                            Price Vinyl: &nbsp; &euro;@Track.PriceVinyl
+                        </p>
+                        <p>
+                            <audio controls="controls">
+                                <source src="~/Content/tempAudio/@Track.TrackAudio" type="audio/mp3" />
+                            </audio>
+                        </p>
+
+                        @*<hr />*@
+                        @*</section>*@
+            }
+        </div>
+
+        </div>
     </div>
+
 </div>
