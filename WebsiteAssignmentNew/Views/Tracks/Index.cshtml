@@ -1,23 +1,34 @@
-﻿@*@model IEnumerable<WebsiteAssignmentNew.Models.Track>*@
+﻿@model IEnumerable<WebsiteAssignmentNew.Models.Track>
 
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Tracks</h2>
+<div class="row">
+    <div class="col-md-2 col-md-offset-1">
+        @foreach (var Track in Model)
+        {
+            <section id="trsckInfo">
+                <img id="trackArt" alt="@Track.Title" class="img-responsive" src="~/Content/TempImages/@Track.TrackImage" width="350" height="350" />
+                <P>
+                    @Track.Artist<br />
+                    @Track.Title<br />                    
+                    Track Code: @Track.TrackCode
+                </P>
+                <p>
+                    Price Digital: &nbsp; &euro;@Track.PriceDownload<br />
+                    Price CD: &nbsp;&nbsp; &euro;@Track.PriceCD<br />
+                    Price Vinyl: &nbsp; &euro;@Track.PriceVinyl
+                </p>
+                <p>
+                    <audio controls="controls">
+                        <source src="~/Content/tempAudio/@Track.TrackAudio" type="audio/mp3" />
+                    </audio>
+                </p>
 
-@*@foreach (var Track in Model)
-{
-    <section>
-        <img alt="@Track.Title" src="~/Content/TempImages/@Track.TrackImage" width="100" height="100" />
-        <h4>
-            @Track.Title<br />
-            @Track.Artist<br />
-            Track Code: @Track.TrackCode
-        </h4>
-        <h4>Price Digital: &euro;@Track.PriceDownload</h4>
-        <h4>Price CD: &euro;@Track.PriceCD</h4>
-        <h4>Price Vinyl: &euro;@Track.PriceVinyl</h4>
-        <hr />
-    </section>
-}*@
+                <hr />
+            </section>
+        }
+        </div>
+    </div>

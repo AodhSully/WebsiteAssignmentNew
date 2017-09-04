@@ -15,5 +15,6 @@ namespace WebsiteAssignmentNew.Models
         public decimal PriceCD { get; set; }
         public decimal PriceVinyl { get; set; }
         public string TrackImage { get; set; }
+        public string TrackAudio { get; set; }
     }
 }
