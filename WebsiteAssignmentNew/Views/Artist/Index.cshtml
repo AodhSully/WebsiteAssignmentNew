@@ -1,7 +1,32 @@
-﻿
+﻿@model IEnumerable<WebsiteAssignmentNew.Models.Artist>
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Artist</h2>
 
+
+    @foreach (var Artist in Model)
+    {
+        <div id="artistForEach">
+            <div id="artistBKColor">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <img src="~/Content/ArtistImg/@Artist.ArtistImg" />
+                            <p id="artistName">@Artist.ArtistName</p>
+                        </div>
+                        <div class="col-md-6">
+
+                            <h4>Releases by this Artist</h4>
+                            <p>@Artist.Title</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }

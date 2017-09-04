@@ -88,12 +88,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\ArtistImg\111.jpg" />
+    <Content Include="Content\ArtistImg\AcidUnit.jpg" />
+    <Content Include="Content\ArtistImg\Anxiety.jpg" />
+    <Content Include="Content\ArtistImg\Banter.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\badcat LOGO.png" />
     <Content Include="Content\Images\croppedLogo.png" />
+    <Content Include="Content\Images\croppedLogoGrey.png" />
     <Content Include="Content\Images\eyes.png" />
     <Content Include="Content\Images\eyes2.png" />
     <Content Include="Content\Images\textLogo.png" />

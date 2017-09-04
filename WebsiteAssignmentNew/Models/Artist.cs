@@ -9,5 +9,6 @@ namespace WebsiteAssignmentNew.Models
     {
         public string ArtistName { get; set; }
         public string Title { get; set; }
+        public string ArtistImg { get; set; }
     }
 }

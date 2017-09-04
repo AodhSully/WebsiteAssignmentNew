@@ -6,6 +6,16 @@
     font-family: 'Tw Cen MT';
 }
 
+body {
+   
+    background-image: url('Images/croppedLogoGrey.png');
+    background-repeat: no-repeat;
+    background-size: 1250px auto;
+    background-position: 50%;
+    /*background-color: #d3d3d3;
+    background-repeat:repeat-y;*/
+  
+}
 
 #eyes {
     height: 120px;
@@ -31,12 +41,10 @@
 header {
     height: auto;
     min-height: 140px;
-    min-width:580px;
-    /*padding-left: 10px;*/
+    min-width:580px;    
     padding-top: 15px;
     padding-bottom: 10px;
-    background-color: red;
-    /*color: yellow;*/
+    background-color: red;    
 }
 
 
@@ -44,7 +52,8 @@ header {
 nav {
     min-height: 25px;
     height: auto;
-    background: linear-gradient(red, white);
+    /*background: linear-gradient(red, white);*/
+    background: linear-gradient( rgba(255,0,0,1), rgba(255,0,0,0));
     padding-top: 0.5px;
     padding-bottom: 40px;
     color: black;
@@ -99,19 +108,40 @@ main {
 }
 
 
-label:after {
-    content: "\A";
-    white-space: pre;
-}
 
 .error {
     color: yellow;
 }
 /************************************************TRACKS*******************************************************************/
 #forloop{
-    max-width:33%;
+  
 }
-/***********************************************REGISTER********************************************************************/
+#cardDeck{
+    
+}
+#img{
+    max-width:100%;
+}
+#player{
+    width:100%;
+}
+/********************************************ARTIST**************************************************************************/
+
+
+
+#artistBKColor {
+    padding-top: 10px;
+    border: solid;
+    border-color: #bdbdbd;
+    border-width: 2px;
+    border-radius: 10px;
+}
+#artistForEach {
+    padding-bottom:5px;
+}
+
+
+/*******************11****************************REGISTER********************************************************************/
 .register {
     float: right;
     margin-right: 5px;
