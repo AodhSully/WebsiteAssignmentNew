@@ -20,7 +20,7 @@
     padding-left: 30px;
     height: 120px;
     width: 600px;
-    padding-left: 25px;
+    
     display: inline-block;
 }
 
@@ -78,7 +78,7 @@ nav {
     nav li ul {
         display: none;
         position: absolute;
-        display: inline
+        
     }
 
     nav li:hover ul {
@@ -108,11 +108,10 @@ label:after {
     color: yellow;
 }
 /************************************************TRACKS*******************************************************************/
-
-
-
+#forloop{
+    max-width:33%;
+}
 /***********************************************REGISTER********************************************************************/
-
 .register {
     float: right;
     margin-right: 5px;
