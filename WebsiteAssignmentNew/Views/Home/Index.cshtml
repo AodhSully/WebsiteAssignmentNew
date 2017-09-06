@@ -3,5 +3,128 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Home</h2>
+<h2 id="pageTitle">Home</h2>
 
+<body>
+    <div class="row">
+        <div class="col-md-12">
+    <div class="container">
+
+        <div id="carouselSlides" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            @*<ol class="carousel-indicators">
+                <li data-target="carouselSlides" data-slide-to="0" class="active"></li>
+                <li data-target="carouselSlides" data-slide-to="1"></li>
+                <li data-target="carouselSlides" data-slide-to="2"></li>
+                <li data-target="carouselSlides" data-slide-to="3"></li>*@
+                @*<img src="~/Content/SliderImg/cropped4.jpg" />*@
+            @*</ol>*@
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img src="~/Content/SliderImg/cropped1.jpg" alt="Los Angeles" style="width:100%;">
+                    <div class="carousel-caption">
+                        @*<h3>EDIT ME</h3>*@
+                        <p>EDIT ME!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="~/Content/SliderImg/cropped2.jpg" alt="Chicago" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>EDIT ME</h3>
+                        @*<p>EDIT ME!</p>*@
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/Content/SliderImg/cropped3.jpg" alt="Chicago" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>EDIT ME</h3>
+                        <p>EDIT ME!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="~/Content/SliderImg/cropped4.jpg" alt="New York" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>EDIT ME</h3>
+                        <p>EDIT ME!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div>
+        <h3 id="homeTitle">Featured Artists</h3>
+        <div  id="minilogue" class="row">
+            <div >
+                <h4 id="paragraphHome">Minilogue</h4><br />
+                <div class="col-md-6 pull-right">
+                    <iframe id="homeVideo" width="550" height="309"
+                            src="https://www.youtube.com/embed/qgiL7lsIATA"></iframe>
+                </div>
+
+                <div class="col-md-6" id="paragraphHome">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc porta mauris nisl, sed sodales urna dapibus in.
+                        Phasellus id ipsum vitae sapien interdum dapibus vel sit amet lorem.
+                        Fusce volutpat sollicitudin massa in viverra. Praesent vel metus vel erat fringilla pharetra vel vitae ligula.
+                        Nulla bibendum ipsum lorem, ut pharetra lacus sodales a. Suspendisse commodo, quam varius malesuada accumsan,
+                        mauris odio mollis risus, sed vulputate eros tortor et quam. Sed posuere ut orci et consectetur.
+                        Suspendisse et cursus risus. Orci varius natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    @*<p>
+                        Quisque non maximus ex, at ultrices lectus. Donec sagittis nulla fringilla fringilla varius.
+                        Maecenas tristique justo quis metus euismod dignissim. Nam non porttitor ipsum.
+                        Aliquam in ex tellus. Ut eget hendrerit sapien. Nam fringilla tortor at tristique maximus.
+                        Praesent metus ex, auctor vel bibendum et, viverra fermentum leo. Nullam sit amet elit tempor,
+                        blandit ligula nec, commodo est.
+                    </p>*@
+                    <p>
+                        Vivamus porttitor congue leo, eu mollis erat imperdiet et. Proin posuere urna quis tristique dapibus.
+                        In hac habitasse platea dictumst. Cras faucibus vestibulum enim, at elementum neque ultricies a.
+                        Donec risus ipsum, porttitor a ornare nec, tempus et ex. Pellentesque habitant morbi tristique senectus
+                        et netus et malesuada fames ac turpis egestas. Morbi scelerisque tortor eu urna aliquet,
+                        ac dapibus ligula finibus. Orci varius natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Aliquam ullamcorper volutpat nibh, ac posuere purus lacinia ut.
+                        Sed rhoncus, felis egestas tristique bibendum, tortor justo lobortis erat,
+                        sodales maximus sem dolor nec est. Fusce commodo tellus vel bibendum varius.
+                        Vestibulum finibus, nulla vitae varius sollicitudin, augue odio dignissim est,
+                        sed sollicitudin sapien erat eu mauris. Ut posuere finibus ligula ut congue.
+                        Ut eleifend in dolor eget porttitor. Nam risus nunc, placerat eget nunc sit amet,
+                        tincidunt rutrum mauris.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row" id="reggie">
+        
+        <h4 id="homeVideo2">Reggie Watts</h4>
+        <div class="col-md-6" id="homeVideo2">
+            <iframe  width="550" height="309"
+                    src="https://www.youtube.com/embed/344OpaQCAQI"></iframe>
+        </div>
+        <div class="col-md-6" id="reggieText">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit nunc magna, a vestibulum enim consequat ut. Sed accumsan eu neque ac varius. Praesent congue tortor et ligula sagittis viverra. Aliquam quis ullamcorper tortor. In aliquet luctus magna non mollis. Phasellus eu ante elit. Vestibulum interdum lacinia orci, vel ultricies purus rutrum sit amet. Aliquam id enim quis sapien egestas consequat auctor id est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed in purus ante. Praesent et sodales augue. Nam congue magna nisi, non lobortis dui pulvinar sed.
+            </p>
+            <p>
+                Vestibulum maximus nibh nisl, ac porta felis dignissim at. Integer suscipit egestas posuere. Etiam varius odio ut blandit tempus. In ultrices condimentum ornare. Duis dignissim non nulla et tristique. Nam tempus posuere neque eu commodo. Vivamus quis faucibus metus. Nulla in nibh pulvinar, fermentum nibh ut, hendrerit tellus. Quisque et felis maximus, fermentum felis vel, interdum tortor. Quisque laoreet ac tortor a pretium. In at tincidunt lorem, at suscipit augue. Proin at ultrices magna.
+            </p>
+            <p>
+                Maecenas sit amet rutrum ex, vitae convallis odio. Proin sodales lacinia placerat. Ut a condimentum mi. Nam commodo ante vel velit vulputate maximus. Integer at nunc eu eros congue volutpat eu sed magna. Phasellus sit amet euismod eros. Curabitur vitae magna sed dolor aliquam porta in nec dui. Curabitur porta lacus sit amet mi sodales, ut egestas urna tincidunt. Quisque eget vulputate sapien.
+            </p>
+        </div>
+    </div>
+    <br />
+
+</body>

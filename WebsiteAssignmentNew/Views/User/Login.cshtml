@@ -3,7 +3,7 @@
     ViewBag.Title = "Login";
 }
 
-<h2>Login</h2>
+<h2 id="pageTitle">Login</h2>
 @using (Html.BeginForm("Login", "User", FormMethod.Post))
 {
     @Html.ValidationSummary(false, "", new { @class = "error" })
