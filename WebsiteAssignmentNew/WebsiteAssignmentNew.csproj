@@ -88,10 +88,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\ArtistImg\BattleGround.jpg" />
     <Content Include="Content\ArtistImg\111.jpg" />
+    <Content Include="Content\ArtistImg\BoxHeads.jpg" />
+    <Content Include="Content\ArtistImg\jeb.jpg" />
+    <Content Include="Content\ArtistImg\Kobogo.jpg" />
+    <Content Include="Content\ArtistImg\[deleted].jpg" />
+    <Content Include="Content\ArtistImg\BulldozerPreachers.jpg" />
+    <Content Include="Content\ArtistImg\Chicago.jpg" />
+    <Content Include="Content\ArtistImg\Charles.jpg" />
     <Content Include="Content\ArtistImg\AcidUnit.jpg" />
+    <Content Include="Content\ArtistImg\Bust.jpg" />
     <Content Include="Content\ArtistImg\Anxiety.jpg" />
+    <Content Include="Content\ArtistImg\Decipher.jpg" />
+    <Content Include="Content\ArtistImg\Dino.jpg" />
+    <Content Include="Content\ArtistImg\Fighting.jpg" />
     <Content Include="Content\ArtistImg\Banter.jpg" />
+    <Content Include="Content\ArtistImg\Gonatozygon.jpg" />
+    <Content Include="Content\ArtistImg\Halifax.jpg" />
+    <Content Include="Content\ArtistImg\Ernie.jpg" />
+    <Content Include="Content\ArtistImg\Hudson.jpg" />
+    <Content Include="Content\ArtistImg\Jane.png" />
+    <Content Include="Content\ArtistImg\Infinity.jpg" />
+    <Content Include="Content\ArtistImg\Legacy.jpg" />
+    <Content Include="Content\ArtistImg\Life.jpg" />
+    <Content Include="Content\ArtistImg\Lo-Fi.jpg" />
+    <Content Include="Content\ArtistImg\Nebula.jpg" />
+    <Content Include="Content\ArtistImg\Nostromo.jpg" />
+    <Content Include="Content\ArtistImg\ODouglas.jpg" />
+    <Content Include="Content\ArtistImg\Perspective.jpg" />
+    <Content Include="Content\ArtistImg\QR.jpg" />
+    <Content Include="Content\ArtistImg\Quiche.jpg" />
     <Content Include="Content\Audio\BattleGround - Don%27t Fear Me.mp3" />
     <Content Include="Content\Audio\Box Heads - Enter the Disco.mp3" />
     <Content Include="Content\Audio\Bust - Neckline.mp3" />

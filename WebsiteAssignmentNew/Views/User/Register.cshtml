@@ -4,34 +4,62 @@
 }
 
 <h2 id="pageTitle">Register</h2>
-<div>
+<div class="form-inline">
     @using (Html.BeginForm("Register", "User", FormMethod.Post))
     {
         @Html.ValidationSummary(false, "", new { @class = "error" })
-        <p>
+
+        
+        //name
+        <p class="col-md-2-pull-2 col-form-label">
             @Html.LabelFor(u => u.FirstName)
+        </p>
+        <p class="col-md-push-2 col-form-label">
             @Html.TextBoxFor(u => u.FirstName)
         </p>
-        <p>
+
+        //surname
+        <p class="col-md-2-pull-2 col-form-label">
             @Html.LabelFor(u => u.LastName)
+        </p>
+        <p class="col-md-push-2 col-form-label">
             @Html.TextBoxFor(u => u.LastName)
         </p>
-        <p>
+
+        //email
+        <p class="col-md-2-pull-2 col-form-label">
             @Html.LabelFor(u => u.Email)
+        </p>
+        <p class="col-md-push-2 col-form-label">
             @Html.TextBoxFor(u => u.Email)
         </p>
-        <p>
+
+        //password
+        <p class="col-md-2-pull-2 col-form-label">
             @Html.LabelFor(u => u.Password)
+        </p>
+        <p class="col-md-push-2 col-form-label">
             @Html.PasswordFor(u => u.Password)
         </p>
-        <p>
+
+        //confirm
+        <p class="col-md-2-pull-2 col-form-label">
             @Html.LabelFor(u => u.ComparePassword)
+        </p>
+        <p class="col-md-push-2 col-form-label">
             @Html.PasswordFor(u => u.ComparePassword)
         </p>
-        <p>
-            <input id="Submit1" type="submit" value="Register" />
-            <input id="Reset1" type="reset" value="Clear" />
+
+        <div>
+
+            <small id="emailHelp" class="form-text text-muted">We will never share your details with a thrid party.</small>
+        </div>
+        //reset submit
+        <p class="btn-group-lg" role="group">
+            <input id="Submit1" type="submit" class="btn btn-group" value="Register" />
+            <input id="Reset1" type="reset" class="btn btn-group" value="Reset" />
         </p>
+
     }
 
 </div>

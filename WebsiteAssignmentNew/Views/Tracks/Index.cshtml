@@ -18,14 +18,17 @@
                         <h4 class="card-title">@Track.Artist - @Track.Title</h4>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
-                    <div class="card-footer">
-                        @*<small class="text-muted">Vinyl &euro; 9.99</small>
-                        <small class="text-muted">CD &euro; 5.99</small>
-                        <small class="text-muted">Digital &euro; 1.99</small>*@
-                        <button type="button" value="Submit">Vinyl &euro; 9.99</button>
-                        <button type="button" value="Submit">CD &euro; 5.99</button>
-                        <button type="button" value="Submit" @*style="float: right;"*@>Digital &euro; 1.99</button>
-</div>
+                    <div class="btn-group-lg" role="group">
+                        <div class="card-footer">
+
+                            @*<small class="text-muted">Vinyl &euro; 9.99</small>
+                <small class="text-muted">CD &euro; 5.99</small>
+                <small class="text-muted">Digital &euro; 1.99</small>*@
+                            <button type="button" class="btn btn-block">Vinyl &euro; 9.99</button>
+                            <button type="button" class="btn btn-block">CD &euro; 5.99</button>
+                            <button type="button" class="btn btn-block" @*style="float: right;"*@>Digital &euro; 1.99</button>
+                        </div>
+                    </div>
                 </div>
 
                 

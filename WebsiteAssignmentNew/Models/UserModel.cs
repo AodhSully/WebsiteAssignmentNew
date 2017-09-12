@@ -38,5 +38,7 @@ namespace WebsiteAssignmentNew.Models
             MinimumLength = 5)]
         [Compare("Password")]
         public string ComparePassword { get; set; }
+
+       
     }
 }
