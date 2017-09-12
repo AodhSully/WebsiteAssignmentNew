@@ -9,12 +9,16 @@
     <meta name="viewport" content="width= device-width, initial scale=1.0">
     <meta name="author" content="Aodh O’Sullivan, Graham Lee, Ultan Gannon">
 
-
+    <style type="text/css" media="screen"></style>
     <title>BadCat Records @ViewBag.Title</title>
-    <link rel="stylesheet" href="~/Content/styles.css" type="text/css" />    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
+    <link rel="stylesheet" href="~/Content/styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script language="javascript" src="~/Scripts/fade.js"></script>
+
+
+
 </head>
 
 
@@ -79,21 +83,21 @@
     </nav>
     <main>
          @RenderBody()
-     
+
     </main>
     <footer>
-        
-        
+
+
         <p>
             <a id="footLink" href="#">Back to top</a>
         </p>
             <p>
-                <a href="http:\\www.facebook.com" target="_blank"><img src="~/Content/MiscImg/facebookBlack.png" width="30" /></a> 
+                <a href="http:\\www.facebook.com" target="_blank"><img src="~/Content/MiscImg/facebookBlack.png" width="30" /></a>
                 <a href="http:\\www.twitter.com" target="_blank"><img src="~/Content/MiscImg/twitterBlack.png" width="30" /></a>
-                <a href="http:\\www.gmail.com" target="_blank"><img src="~/Content/MiscImg/mailBlack.png" width="30" /></a>
+                <a href="mailto:info@badcatrecords.com?subject=info" target="_blank"><img src="~/Content/MiscImg/mailBlack.png" width="30" /></a>
                 <a href="http:\\www.snapchat.com" target="_blank"><img src="~/Content/MiscImg/snapchatBlack.png" width="30" /></a>
                 <a href="http:\\www.youtube.com" target="_blank"><img src="~/Content/MiscImg/youtubeBlack.png" width="30" /></a>
-                
+
             </p>
         @*<p id="footLogo">
 
@@ -102,9 +106,9 @@
         </p>*@
 
         <h5>
-            BadCat Records &copy; @DateTime.Now.Year &nbsp;            
+            BadCat Records &copy; @DateTime.Now.Year &nbsp;
         </h5>
-        
+
     </footer>
     </div>
 </body>

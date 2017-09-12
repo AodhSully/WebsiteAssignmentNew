@@ -5,30 +5,38 @@
 }
 
 <h2 id="pageTitle">Tracks</h2>
+
 <div id="forloop">
     @foreach (var Track in Model)
     {
+        <div class="fade">
         <div id="cardDeck" class="card-deck">
             <div class="col-md-4">
                 <div class="card">
-                    <img id="img"class="card-img-top" src="~/Content/TempImages/@Track.TrackImage" alt="Card image cap">
+                    <img id="img" class="card-img-top" src="~/Content/TrackImages/@Track.TrackImage" alt="Track Image">
                     <div class="card-block">
                         <h4 class="card-title">@Track.Artist - @Track.Title</h4>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Vinyl &euro; 9.99</small>
+                        @*<small class="text-muted">Vinyl &euro; 9.99</small>
                         <small class="text-muted">CD &euro; 5.99</small>
-                        <small class="text-muted">Digital &euro; 1.99</small>
-                    </div>
+                        <small class="text-muted">Digital &euro; 1.99</small>*@
+                        <button type="button" value="Submit">Vinyl &euro; 9.99</button>
+                        <button type="button" value="Submit">CD &euro; 5.99</button>
+                        <button type="button" value="Submit" @*style="float: right;"*@>Digital &euro; 1.99</button>
+</div>
                 </div>
 
                 
                 <div>
-                    <audio id="player" controls="controls" runat=server src="~/Content/tempAudio/@Track.TrackAudio" type="audio/mp3">  @*figure this out*@
+                    <audio id="player" class="full" controls="controls" runat=server src="~/Content/Audio/@Track.TrackAudio" type="audio/mp3">  @*figure this out*@
                         Your browser does not support the audio element.
                     </audio>
+
+
                 </div>
+            </div>
             </div>
         </div>
     }

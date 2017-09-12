@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<WebsiteAssignmentNew.Models.Artist>
 @{
     ViewBag.Title = "Index";
 }
@@ -6,57 +6,59 @@
 <h2 id="pageTitle">Home</h2>
 
 <body>
-    <div class="row">
-        <div class="col-md-12">
-    <div class="container">
+    <div class="fade">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container">
 
-        <div id="carouselSlides" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            @*<ol class="carousel-indicators">
-                <li data-target="carouselSlides" data-slide-to="0" class="active"></li>
-                <li data-target="carouselSlides" data-slide-to="1"></li>
-                <li data-target="carouselSlides" data-slide-to="2"></li>
-                <li data-target="carouselSlides" data-slide-to="3"></li>*@
-                @*<img src="~/Content/SliderImg/cropped4.jpg" />*@
-            @*</ol>*@
+                    <div id="carouselSlides" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        @*<ol class="carousel-indicators">
+                            <li data-target="carouselSlides" data-slide-to="0" class="active"></li>
+                            <li data-target="carouselSlides" data-slide-to="1"></li>
+                            <li data-target="carouselSlides" data-slide-to="2"></li>
+                            <li data-target="carouselSlides" data-slide-to="3"></li>*@
+                        @*<img src="~/Content/SliderImg/cropped4.jpg" />*@
+                        @*</ol>*@
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
 
-                <div class="item active">
-                    <img src="~/Content/SliderImg/cropped1.jpg" alt="Los Angeles" style="width:100%;">
-                    <div class="carousel-caption">
-                        @*<h3>EDIT ME</h3>*@
-                        <p>EDIT ME!</p>
+                            <div class="item active">
+                                <img src="~/Content/SliderImg/cropped1.jpg" alt="Los Angeles" style="width:100%;">
+                                <div class="carousel-caption">
+                                    @*<h3>EDIT ME</h3>*@
+                                    <p>EDIT ME!</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/SliderImg/cropped2.jpg" alt="Chicago" style="width:100%;">
+                                <div class="carousel-caption">
+                                    <h3>EDIT ME</h3>
+                                    @*<p>EDIT ME!</p>*@
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="~/Content/SliderImg/cropped3.jpg" alt="Chicago" style="width:100%;">
+                                <div class="carousel-caption">
+                                    <h3>EDIT ME</h3>
+                                    <p>EDIT ME!</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/SliderImg/cropped4.jpg" alt="New York" style="width:100%;">
+                                <div class="carousel-caption">
+                                    <h3>EDIT ME</h3>
+                                    <p>EDIT ME!</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-
-                <div class="item">
-                    <img src="~/Content/SliderImg/cropped2.jpg" alt="Chicago" style="width:100%;">
-                    <div class="carousel-caption">
-                        <h3>EDIT ME</h3>
-                        @*<p>EDIT ME!</p>*@
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="~/Content/SliderImg/cropped3.jpg" alt="Chicago" style="width:100%;">
-                    <div class="carousel-caption">
-                        <h3>EDIT ME</h3>
-                        <p>EDIT ME!</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="~/Content/SliderImg/cropped4.jpg" alt="New York" style="width:100%;">
-                    <div class="carousel-caption">
-                        <h3>EDIT ME</h3>
-                        <p>EDIT ME!</p>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </div>
         </div>
     </div>
     <div>

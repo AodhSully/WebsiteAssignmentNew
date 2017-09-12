@@ -14,6 +14,7 @@ body {
     background-position: 50%;
     /*background-color: #d3d3d3;
     background-repeat:repeat-y;*/
+    padding-bottom:126px;
   
 }
 
@@ -159,17 +160,26 @@ main {
     padding-right:10px;
 }
 /************************************************TRACKS*******************************************************************/
-#forloop {
-}
-#cardDeck{
-    
-}
-#img{
-    max-width:100%;
+
+#img {
+    max-width: 100%;
+    border: solid;
+    border-color: #bdbdbd;
+    border-width: 2px;
+    border-radius: 10px;
 }
 #player{
     width:100%;
     padding-bottom: 5px;
+    align-items:center;
+}
+
+.fade{
+    opacity:0;
+}
+
+#playerNew {
+    max-width: 360px;
 }
 /********************************************ARTIST**************************************************************************/
 
@@ -185,6 +195,11 @@ main {
 #artistForEach {
     padding-bottom:5px;
 }
+
+/***********************************************************SHOP*********************************************************/
+
+
+
 /*******************************************************CONTACT*********************************************************/
 
 #contactLogo{
@@ -224,8 +239,12 @@ footer {
     padding-bottom: 10px;
     background-image: url('MiscImg/textureRed.jpg');
     background-color: red;
-    /*position:fixed;
-    width:80%;*/
+    /*position:fixed;*/
+    position: absolute;
+
+    bottom: 0;
+
+    width: 80%;
     /*background: linear-gradient( rgba(255,0,0,0), rgba(255,0,0,1));*/
 }
 #footLink{
