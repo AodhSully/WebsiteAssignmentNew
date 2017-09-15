@@ -1,0 +1,24 @@
+﻿@using WebsiteAssignmentNew.Models
+
+@model IEnumerable<ContactModel>
+@{
+    ViewBag.Title = "ShowFeedback";
+}
+@section Logged{
+    @if (Session["name"] == null || Session["name"].ToString() != "Staff")
+    {
+        Response.Redirect(Url.Action("Login", "User"));
+    }
+}
+<h2>User Feedback</h2>
+@ViewBag.Message
+@foreach (ContactModel contact in Model)
+{
+    <p>
+        @contact.Name<br />
+        @contact.Email
+    </p>
+    <p>@contact.Comments</p>
+    <hr />
+}
+

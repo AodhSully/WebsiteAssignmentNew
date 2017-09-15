@@ -1,8 +1,88 @@
-﻿
+﻿@model WebsiteAssignmentNew.Models.ContactModel
 @{
     ViewBag.Title = "Index";
 }
 
-<h2 id="pageTitle">Contact</h2>
+<h2 id="pageTitle">Contact BadCat</h2>
 
-<img id="contactLogo" src="~/Content/Images/logoSmall.png" />
+        <div class="col-md-4-push-2">
+            <img id="contactLogo" src="~/Content/Images/logoSmall.png" />
+        </div>
+@using (Html.BeginForm("Feedback", "Contact", FormMethod.Post))
+{
+    @Html.ValidationSummary(false, "", new { @class = "error" })
+    <p class="col-md-2-pull-2 col-form-label">
+        @Html.LabelFor(c => c.Name)
+        </p>
+        <p class="col-md-push-2 col-form-label">
+        @Html.TextBoxFor(c => c.Name)<span> (Optional)</span>
+    </p>
+
+    <p class="col-md-2-pull-2 col-form-label">
+        @Html.LabelFor(c => c.Email)
+        </p>
+        <p class="col-md-2-push-2 col-form-label">
+        @Html.TextBoxFor(c => c.Email)<span> (Required)</span>
+    </p>
+
+
+    <p class="col-md-2-pull-2 col-form-label">
+        @Html.LabelFor(c => c.Phone)
+        </p>
+        <p class="col-md-2-push-2 col-form-label">
+        @Html.TextBoxFor(c => c.Phone)<span> (Optional)</span>
+    </p>
+
+    <p class="col-md-2-pull-2 col-form-label">
+        @Html.LabelFor(c => c.Address)
+        </p>
+        <p class="col-md-2-push-2 col-form-label">
+        @Html.TextBoxFor(c => c.Address)<span> (Optional)</span>
+    </p>
+
+    <p class="col-md-2-pull-2 col-form-label">
+        @Html.LabelFor(c => c.Website)
+        </p>
+        <p class="col-md-2-push-2 col-form-label">
+        @Html.TextBoxFor(c => c.Website)<span> (Optional)</span>
+    </p>
+
+    <p class="col-md-2-pull-2 col-form-label">
+        @Html.LabelFor(c => c.Artist)
+        </p>
+        <p class="col-md-2-push-2 col-form-label">
+        @Html.CheckBox("Artist", false)<span> (Optional)</span>
+    </p>
+
+
+
+    <p class="col-md-2-pull-2 col-form-label">
+        @Html.LabelFor(c => c.ArtistName)
+        </p>
+        <p class="col-md-2-push-2 col-form-label">
+        @Html.TextBoxFor(c => c.ArtistName)<span> (Optional)</span>
+    </p>
+
+
+
+        <p class="col-md-2-pull-2 col-form-label">
+            @Html.LabelFor(c => c.Comments)
+            </p>
+
+            <p class="col-md-2-pull-2 col-form-label">
+            @Html.TextAreaFor(c => c.Comments, new { @rows = 4, @cols = 50 })
+        </p>
+        <input type="submit" value="Submit" />
+
+    //This reset button is visible but not functional
+    <input type='button' id='resetButton' value='Reset' onclick='Contact.reset();return false;' />
+
+}
+
+
+
+
+<div id="google-maps" >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19091.158569521744!2d-6.2334757762430915!3d53.264545117550604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867090b5444013d%3A0x2600c7a819bb0531!2sSandyford%2C+Dublin!5e0!3m2!1sen!2sie!4v1505147061690" 
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>

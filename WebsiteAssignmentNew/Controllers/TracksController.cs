@@ -14,7 +14,7 @@ namespace WebsiteAssignmentNew.Controllers
         {
             List<Track> tracklist = new List<Track>()
             {
-                  new Track{ Artist="[deleted]", Title="Roast Me", TrackCode="BC005", PriceDownload=0.99M, PriceCD=4.99M, PriceVinyl=9.99M, TrackImage="deleted.jpg", TrackAudio="[deleted] - Roast Me.mp3"},
+                  new Track{ Artist="[deleted]", Title="Roast Me", TrackCode="BC0005", PriceDownload=0.99M, PriceCD=4.99M, PriceVinyl=9.99M, TrackImage="deleted.jpg", TrackAudio="[deleted] - Roast Me.mp3"},
                   new Track{ Artist="111", Title="Where Were You",  TrackCode="BC0001", PriceDownload=0.99M, PriceCD=4.99M, PriceVinyl=9.99M, TrackImage="111.png", TrackAudio="111.mp3"},
                   new Track{ Artist="Acid Unit",Title="Taxi", TrackCode="BC0002", PriceDownload=0.99M, PriceCD=4.99M, PriceVinyl=9.99M, TrackImage="AcidUnit.jpg", TrackAudio="AcidUnit.mp3"},
                   new Track{ Artist="Anxiety",Title="Anxiety", TrackCode="BC0003", PriceDownload=0.99M, PriceCD=4.99M, PriceVinyl=9.99M,TrackImage="Anxiety.png", TrackAudio="Anxiety.mp3"},
@@ -70,16 +70,9 @@ namespace WebsiteAssignmentNew.Controllers
                   new Track{ Artist="Universal Robots", Title="Goodbye", TrackCode="BC054",PriceDownload=0.99M, PriceCD=4.99M, PriceVinyl=9.99M, TrackImage="Universal.jpg", TrackAudio="Universal Robots - Goodbye.mp3"},
                   new Track{ Artist="Virgin", Title="Virgin", TrackCode="BC055",PriceDownload=0.99M, PriceCD=4.99M, PriceVinyl=9.99M, TrackImage="Virgin.jpg", TrackAudio="Virgin - Virgin.mp3"},
                   new Track{ Artist="Wilson", Title="LightHouse", TrackCode="BC056",PriceDownload=0.99M, PriceCD=4.99M, PriceVinyl=9.99M, TrackImage="Wilson.jpg", TrackAudio="Wilson - LightHouse.mp3"},
-
-
-
+                  
             };
             return View(tracklist);
-        }
-
-        //public ActionResult PlayAudio(string TrackAudio)
-        //{
-
-        //}
+        }        
     }
 }

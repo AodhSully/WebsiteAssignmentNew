@@ -5,35 +5,28 @@
 
 <h2 id="pageTitle">Artist</h2>
 
+@foreach (var Artist in Model)
+{
+    <div class="fade">
+        <div id="artistForEach">
+            <div id="artistBKColor">
 
-    @foreach (var Artist in Model)
-    {
-        <div class="fade">
-            <div id="artistForEach">
-                <div id="artistBKColor">
+                <div class="container">
+                    <div class="row">
 
-                    <div class="container">
-                        <div class="row">
+                        <div class="col-md-6">
 
-                            <div class="col-md-6">
+                            <img id="artistImg" src="~/Content/ArtistImg/@Artist.ArtistImg" />
+                            <p id="artistName">@Artist.ArtistName</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Releases by this Artist</h4>
 
-                                <img id="artistImg" src="~/Content/ArtistImg/@Artist.ArtistImg" />
-                                <p id="artistName">@Artist.ArtistName</p>
-                            </div>
-                            <div class="col-md-6">
-
-                                <h4>Releases by this Artist</h4>
-                               
-
-                               
-                                    <p>@Artist.Title</p>
-                                 
-                                
-
-                            </div>
+                            <p>@Artist.Title</p>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            }
+        </div>
+    </div>
+}

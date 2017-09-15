@@ -300,6 +300,7 @@
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\script8.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\LoginRegister.cshtml" />
     <Content Include="Views\Tracks\Index.cshtml" />
@@ -325,6 +326,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Artist.cs" />
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\DAO.cs" />
     <Compile Include="Models\Shop.cs" />
     <Compile Include="Models\Track.cs" />
@@ -338,6 +340,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="Views\Contact\Comments.cshtml" />
+    <Content Include="Views\Contact\ShowFeedback.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
