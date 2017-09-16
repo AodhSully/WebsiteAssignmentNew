@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<WebsiteAssignmentNew.Models.Artist>
+
 @{
     ViewBag.Title = "Index";
 }
@@ -17,12 +18,15 @@
                         <div class="col-md-6">
 
                             <img id="artistImg" src="~/Content/ArtistImg/@Artist.ArtistImg" />
-                            <p id="artistName">@Artist.ArtistName</p>
+                            <h4 id="artistName">@Html.ActionLink(@Artist.ArtistName, "Index", "Tracks")</h4>
                         </div>
                         <div class="col-md-6">
                             <h4>Releases by this Artist</h4>
 
-                            <p>@Artist.Title</p>
+                            <p>@Html.ActionLink(@Artist.Title, "Index", "Tracks") </p>
+                           <h4>About This Artist</h4>
+                            <p>Sed felis libero, finibus sed mollis quis, euismod et nibh. Morbi quis augue faucibus, varius justo id, congue leo. Donec a sodales nibh. Sed eget blandit justo, vel luctus turpis. Etiam vel cursus dolor. Integer consectetur enim eu mattis cursus. Nulla euismod efficitur nisl, ac condimentum lectus viverra in. </p>
+                            @*<p>@Track.TrackImage</p>*@
                         </div>
                     </div>
                 </div>

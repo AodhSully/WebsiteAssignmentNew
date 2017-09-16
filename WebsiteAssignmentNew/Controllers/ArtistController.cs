@@ -14,11 +14,11 @@ namespace WebsiteAssignmentNew.Controllers
         {
             List<Artist> artistList = new List<Artist>()
             {
+                  new Artist{ ArtistName="[deleted]", Title="Roast Me",  ArtistImg="[deleted].jpg"},
                   new Artist{ ArtistName="111", Title="Where Were You",  ArtistImg="111.jpg"},
+                  new Artist{ ArtistName="Banter", Title="Banter",  ArtistImg="Banter.jpg"},
                   new Artist{ ArtistName="Acid Unit", Title="Taxi",  ArtistImg="AcidUnit.jpg"},
                   new Artist{ ArtistName="Anxiety", Title="Anxiety",  ArtistImg="Anxiety.jpg"},
-                  new Artist{ ArtistName="Banter", Title="Banter",  ArtistImg="Banter.jpg"},
-                  new Artist{ ArtistName="[deleted]", Title="Roast Me",  ArtistImg="[deleted].jpg"},
                   new Artist{ ArtistName="Battle Ground", Title="Don't Fear Me",  ArtistImg="BattleGround.jpg"},
                   new Artist{ ArtistName="Box Heads", Title="Enter The Disco",  ArtistImg="BoxHeads.jpg"},
                   new Artist{ ArtistName="Bulldozer Preachers", Title="Float On",  ArtistImg="BulldozerPreachers.jpg"},

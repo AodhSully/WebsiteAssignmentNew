@@ -8,7 +8,7 @@ namespace WebsiteAssignmentNew.Models
     public class Artist : Track
     {
         public string ArtistName { get; set; }
-        public string Title { get; set; }
+        public string TrackTitle { get; set; }
         public string ArtistImg { get; set; }
 
 

@@ -72,11 +72,13 @@
             <p class="col-md-2-pull-2 col-form-label">
             @Html.TextAreaFor(c => c.Comments, new { @rows = 4, @cols = 50 })
         </p>
-        <input type="submit" value="Submit" />
 
-    //This reset button is visible but not functional
-    <input type='button' id='resetButton' value='Reset' onclick='Contact.reset();return false;' />
+        <div class="btn-group-lg col-form-label">
+            <input type="submit" value="Submit" />
 
+            @*//This reset button is visible but not functional*@
+            <input type='button' id='resetButton' value='Reset' onclick='Contact.reset();return false;' />
+        </div>
 }
 
 

@@ -56,12 +56,12 @@ nav {
     height: auto;
     /*background: linear-gradient(red, white);*/
     background: linear-gradient( rgba(255,0,0,1), rgba(255,0,0,0));
-    padding-top: 0.5px;
-    padding-bottom: 40px;
+    padding-top: 0.5px, 100px, 40px, 50px;
+    /*padding-bottom:;
+    padding-right:;
+    padding-left:;*/
     color: black;
     font-size: 25px;
-    padding-right: 100px;
-    padding-left: 50px;
     min-width: 580px;
 }
 
@@ -121,9 +121,7 @@ main {
 
 /**************************************************************HOME**********************************************************************/
 
-#carouselSlides{
 
-}
 #minilogue {
     border: solid;
     border-color: #bdbdbd;
@@ -196,11 +194,17 @@ main {
 }
 #artistForEach {
     padding-bottom:5px;
+    color:black;
+    text-decoration:none;
+ 
 }
+
 
 #artistImg{
     max-width:320px;
+    color:black;
 }
+
 /***********************************************************SHOP*********************************************************/
 /*******************************************************CONTACT*********************************************************/
 #contactLogo {
@@ -211,7 +215,7 @@ main {
 .google-maps {
     position: relative;
     padding-bottom: 75%;
-    // This is the aspect ratio height: 0;
+    /*// This is the aspect ratio height: 0;*/
     overflow: hidden;
 }
 
